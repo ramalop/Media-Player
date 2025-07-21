@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="CN-player.css">
+</head>
+<body>
+    <button  id="themeToggle">🌙 Dark Mode</button>
+    
+    <div class="container">
+        <div class="filterDiv">
+            <label for="genreSelect">Filter By Genres</label>
+            <select name="genreSelect" id="genreSelect">
+                <option value="All">All Genres</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="HipHop">HipHop</option>
+            </select>
+            <div class="dynamicFilterSong"></div>
+        </div>
+        <div class="midDiv">
+            <div class="songPoster">
+
+            </div>
+            <div class="bottom">
+                <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+                <div class="icons">
+                    <i id = "previous" class="fa-solid  fa-3x fa-backward"></i>
+                    <i class="fa-solid  fa-3x fa-circle-play" id="masterPlay"></i>
+                    <i id = "next" class="fa-solid  fa-3x fa-forward"></i>
+                </div>
+                <div id="addToPlaylist">
+                    <button id="addSongs">Add To Playlist</button>
+                </div>
+                <div class="songInfo">
+                    <img src="playing.gif" alt="playing" width="42px" id="gif"> &nbsp;
+                </div>
+            </div>
+
+        </div>
+        <div class="playlist">
+            <div class="search">
+                <input id="searchInput" type="text" placeholder="Enter playlist name"><button id="playlistBtn">Create New Playlist</button>
+            </div>
+            <div class="currentPlaylist"><h3>Current Playlist</h3></div>
+            <div class="allPlaylist"><h3>All Playlists</h3></div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/eba924f8f6.js" crossorigin="anonymous"></script>
+    <script src="CN-player.js"></script>
+</body>
+</html>
